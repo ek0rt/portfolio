@@ -38,13 +38,7 @@
     justify-content: space-between;
     align-content: space-between;
 }
-&-title {
-  position: relative;
-  padding-left: 13px;
-  padding-top: 1px;
-  @include before_circle;
-  
-}
+
 &-counter {
   font-size: 14px;
   line-height: 21px;
