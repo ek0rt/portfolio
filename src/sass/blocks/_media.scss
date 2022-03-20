@@ -180,11 +180,13 @@
   .about {
     &__wrapper {
       grid-template: 340px auto auto / 100%;
+      justify-content: center;
     }
   
     &__skills {
       grid-template-columns: 1fr;
-   
+      justify-content: center;
+
     }
   }
   .resume {
@@ -193,6 +195,7 @@
       margin: auto;
       padding: 60px 15px 0 15px;
       grid-template-columns: 270px;
+      justify-content: center;
     }
   }
   .skills {
@@ -207,6 +210,7 @@
       grid-auto-rows: auto;
       gap: 13px;
       margin-top: 20px;
+      justify-content: center;
   }
   &__ratings {
     grid-template-columns: repeat(auto-fit,300px);
