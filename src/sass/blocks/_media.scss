@@ -14,17 +14,31 @@
       grid-template-columns: 400px 520px;
       column-gap: 40px;
     }
-    &__skills {
-      grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
-      column-gap: 20px;
-      &-item {
-        grid-template-columns: 40px 195px;
-        column-gap: 15px;
+    .skills {
+      &__items {
+          grid-template-columns: repeat(auto-fit, 270px);
+          justify-content: space-between;
       }
+  }
+  }
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2,347px);
     }
   }
- 
-}
+  .skills {
+    padding-top: 70px;
+    &__items {
+      padding: 0 20px;
+      grid-template: repeat(2, auto) / repeat(3, minmax(270px, auto ));
+      grid-auto-rows: auto;
+      gap: 13px;
+  }
+  &__item {
+    padding: 15px 25px 15px 25px;
+  }
+  }
+  }
 
 @media (max-width: 992px) {
   .container {
@@ -48,6 +62,24 @@
         column-gap: 20px;
       }
     }
+  }
+  .resume {
+    &__wrapper {
+      padding: 60px 35px 0 35px;
+      grid-template-columns: repeat(2,277px);
+      column-gap: 95px;
+    }
+  }
+  .skills {
+    padding-top: 70px;
+    &__items {
+      grid-template: repeat(2, auto) / repeat(2, minmax(270px, auto ));
+      grid-auto-rows: auto;
+      gap: 13px;
+  }
+  &__item {
+    padding: 15px 25px 15px 25px;
+  }
   }
 }
 
@@ -81,6 +113,26 @@
         column-gap: 20px;
       }
     }
+  }
+  .resume {
+    padding-top: 80px;
+    &__wrapper {
+      padding: 60px 15px 0 15px;
+      grid-template-columns: repeat(2,237px);
+      column-gap: 35px;
+    }
+  }
+  .skills {
+    padding-top: 70px;
+    &__items {
+      grid-template: repeat(2, auto) / repeat(2, auto);
+      grid-auto-rows: auto;
+      gap: 13px;
+  }
+  &__item {
+    padding: 15px 25px 15px 25px;
+  }
+  
   }
 }
 
@@ -121,6 +173,34 @@
       grid-template-columns: 1fr;
    
     }
+  }
+  .resume {
+    padding-top: 50px;
+    &__wrapper {
+      margin: auto;
+      padding: 60px 15px 0 15px;
+      grid-template-columns: 270px;
+    }
+  }
+  .skills {
+   .title {
+     &_fs36 {
+      line-height: 39px;
+     }
+   }
+    padding-top: 40px;
+    &__items {
+      grid-template: 270px / 270px ;
+      grid-auto-rows: auto;
+      gap: 13px;
+      margin-top: 20px;
+  }
+  &__item {
+    padding: 15px 25px 15px 25px;
+  }
+  .divider {
+    margin-top: 15px;
+  }
   }
 } 
 
