@@ -14,10 +14,12 @@
       grid-template-columns: 400px 520px;
       column-gap: 40px;
     }
-    .skills {
-      &__items {
-          grid-template-columns: repeat(auto-fit, 270px);
-          justify-content: space-between;
+    &__skills {
+      column-gap: 20px;
+      grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+      &-item {
+          grid-template-columns: 40px 195px;
+          column-gap: 15px;
       }
   }
   }
@@ -34,9 +36,13 @@
       grid-auto-rows: auto;
       gap: 13px;
   }
-  &__item {
-    padding: 15px 25px 15px 25px;
-  }
+  &__ratings {
+    margin-top: 120px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: space-between;
+    grid-auto-rows: minmax(70px, auto);
+    padding: 0 30px;
+}
   }
   }
 
@@ -77,10 +83,16 @@
       grid-auto-rows: auto;
       gap: 13px;
   }
-  &__item {
-    padding: 15px 25px 15px 25px;
-  }
-  }
+  &__ratings {
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: space-between;
+    grid-auto-rows: minmax(70px, auto);
+    padding: 0;
+    &-line {
+      width: 100%;
+    }
+}
+}
 }
 
 @media (max-width: 768px) {
@@ -129,10 +141,11 @@
       grid-auto-rows: auto;
       gap: 13px;
   }
-  &__item {
-    padding: 15px 25px 15px 25px;
-  }
-  
+  &__ratings {
+    justify-content: center;
+    grid-auto-rows: minmax(70px, auto);
+
+}
   }
 }
 
@@ -175,7 +188,7 @@
     }
   }
   .resume {
-    padding-top: 50px;
+    padding-top: 40px;
     &__wrapper {
       margin: auto;
       padding: 60px 15px 0 15px;
@@ -195,9 +208,9 @@
       gap: 13px;
       margin-top: 20px;
   }
-  &__item {
-    padding: 15px 25px 15px 25px;
-  }
+  &__ratings {
+    grid-template-columns: repeat(auto-fit,300px);
+}
   .divider {
     margin-top: 15px;
   }
