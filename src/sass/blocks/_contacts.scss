@@ -9,6 +9,8 @@
   &__img {
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 &__descr {
@@ -90,6 +92,7 @@
       column-gap: 35px;
     }
     &__policy {
+      display: flex;
       font-size: 12px;
       line-height: 18px;
       align-self: center;

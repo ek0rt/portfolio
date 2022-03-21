@@ -9,18 +9,17 @@
     align-content: space-between;
     row-gap: 15px;
     grid-auto-flow: column;
+    grid-auto-rows: minmax(45px, auto);
   }
   &__item {
     position: relative;
     display: grid;
-    grid-template: minmax(21px, auto) minmax(18px, auto) / repeat(2, auto);
-    justify-content: space-between;
-    align-content: space-between;
+    grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
     padding-left: 25px;
     &:before {
       content: '';
       position: absolute;
-      top: 4px;
+      top: 5px;
       border-radius: 100%;
       width: 15px;
       height: 15px;
@@ -39,7 +38,7 @@
       justify-self: end;
     }
     &-descr {
-      width: 340px ;
+      margin-top: 5px;
       font-size: 12px;
       line-height: 18px;
       grid-column: 1/3;
