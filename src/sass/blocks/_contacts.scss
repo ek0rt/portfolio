@@ -84,6 +84,10 @@
       font-weight: 700;
       font-size: 14px;
       line-height: 21px;
+      color: #000; 
+      &:hover {
+        color: #000; 
+      }
     }
     &__triggers {
       grid-column: 1/3;
