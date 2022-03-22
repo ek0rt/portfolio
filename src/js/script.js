@@ -1,3 +1,4 @@
+
 //menu
 const hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.menu'),
