@@ -22,7 +22,7 @@
     background-color: $main-color;
     margin: 25px auto 0 auto;
 }
-
+@import 'blocks/pageup';
 @import 'blocks/promo';
 @import 'blocks/btn';
 @import 'blocks/title';
@@ -34,5 +34,4 @@
 @import 'blocks/portfolio';
 @import 'blocks/price';
 @import 'blocks/contacts';
-@import 'blocks/pageup';
 @import 'blocks/media';
