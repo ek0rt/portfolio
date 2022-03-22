@@ -52,18 +52,18 @@
       </div>
       <nav>
         <ul class="menu__list">
-          <li class="menu__link"><a href="#">Про меня</a></li>
-          <li class="menu__link"><a href="#">Мой опыт</a></li>
-          <li class="menu__link"><a href="#">Мои навыки</a></li>
-          <li class="menu__link"><a href="#">Мои работы</a></li>
-          <li class="menu__link"><a href="#">Прайс-лист</a></li>
-          <li class="menu__link"><a href="#">Контакты</a></li>
+          <li  class="menu__link"><a data-num='1' href="#about">Про меня</a></li>
+          <li  class="menu__link"><a data-num='2' href="#resume">Мой опыт</a></li>
+          <li  class="menu__link"><a data-num='3' href="#skills">Мои навыки</a></li>
+          <li  class="menu__link"><a data-num='4' href="#portfolio">Мои работы</a></li>
+          <li  class="menu__link"><a data-num='5' href="#price">Прайс-лист</a></li>
+          <li  class="menu__link"><a data-num='6' href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <div class="menu__social">
-        <a href="#"><img src="./icons/about__social/Github.svg" alt=""></a>
-        <a href="#"><img src="./icons/about__social/Instagram.svg" alt=""></a>
-        <a href="#"><img src="./icons/about__social/Facebook.svg" alt=""></a>
+        <a class="menu__social_item" href="#"><img src="./icons/about__social/Github.svg" alt=""></a>
+        <a class="menu__social_item" href="#"><img src="./icons/about__social/Instagram.svg" alt=""></a>
+        <a class="menu__social_item" href="#"><img src="./icons/about__social/Facebook.svg" alt=""></a>
       </div>
     </div>
     <div class="menu__overlay"></div>
@@ -148,7 +148,7 @@
 
 <section class="resume"> 
 <div class="container">
-<h2 class="title title_fs16 title__section-title">Опыт</h2>
+<h2 id="resume" class="title title_fs16 title__section-title">Опыт</h2>
 <div class="title title_fs36 title__section-subtitle">Чем я буду полезна</div>
 <div class="divider"></div>
 <div class="resume__wrapper">
@@ -165,7 +165,8 @@
       <div class="title title_fs14">МГТУ им. Н. Э. Баумана</div>
       <div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>
   </div>
-  <div class="resume__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+  <div class="resume__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
+     </div>
   </div>
  </li>
  <li>
@@ -220,7 +221,7 @@
 
 <section class="skills">
 <div class="container">
-<h2 class="title title_fs16 title__section-title">Навыки</h2>
+<h2 id="skills" class="title title_fs16 title__section-title">Навыки</h2>
 <div class="title title_fs36 title__section-subtitle">Что я использую в работе</div>
 <div class="divider"></div>
 
@@ -353,7 +354,7 @@
 
 <section class="price">
   <div class="container">
-    <h2 class="title title_fs16 title__section-title">Прайс-лист</h2>
+    <h2 id="price" class="title title_fs16 title__section-title">Прайс-лист</h2>
     <div class="divider"></div>
     <div class="price__wrapper">
     <div class="price__item">
@@ -395,7 +396,7 @@
     <div class="contacts__wrapper">
       <div class="contacts__img"><img src="./img/main.jpg" alt="photo"></div>
       <div class="contacts__descr">
-        <h2 class="title title_fs16 contacts__title">Контакты</h2>
+        <h2 id="contacts" class="title title_fs16 contacts__title">Контакты</h2>
         <div class="title contacts__subtitle">Свяжитесь со мной</div>
         <div class="divider"></div>
         <div class="title title_fs14 contacts__text">Любым удобным для вас способом:</div>
@@ -406,28 +407,30 @@
         </div>
         <div class="title title_fs14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
 
-        <form action="#" class="contacts__form">
+        <form id="contacts-form" action="#" class="contacts__form">
           <div class="contacts__input">
-            <input required name="name" id="name" type="text">
-            <label  for="name">Ваше имя</label>
+              <input required name="name" id="name" type="text">
+              <label for="name">Ваше имя</label>
           </div>
           <div class="contacts__input">
-            <input required name="email" id="email" type="email">
-            <label for="email">Ваша почта</label>
+              <input required name="email" id="email" type="email">
+              <label for="email">Ваша почта</label>
           </div>
+
           <div class="contacts__textarea">
-            <textarea name="text" id="text"></textarea>
-            <label for="text">Ваше сообщение</label>
+              <textarea required name="text" id="text"></textarea>
+              <label for="text">Ваше сообщение</label>
           </div>
           <div class="contacts__triggers">
-            <button class="contacts__btn btn">Отправить сообщение</button>
-            <div class="contacts__policy">
-              <input required type="checkbox">
-              <span class="contacts__policy_text">Я согласен(а) с <a blank href="/policy.html">политикой конфиденциальности</a></span>
-            </div>
+              <button type="submit" class="contacts__btn btn">Отправить сообщение</button>
+              <div class="contacts__policy">
+                  <input  required name="checkbox" type="checkbox">
+                  <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+              </div>
           </div>
-        </form>
+      </form>
 
+      
       </div>
     </div>
   </div>
@@ -437,10 +440,10 @@
   <img src="./icons/up.svg" alt="up">
 </a>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/jquery.mask.min.js"></script>
-<script src="/js/jquery.validate.min.js"></script>
-<script src="js/script.js"></script>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script defer src="js/jquery.mask.min.js"></script>
+<script defer src="js/jquery.validate.min.js"></script>
+<script defer src="js/script.js"></script>
 </body>
 
 </html>

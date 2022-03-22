@@ -3,7 +3,11 @@
     display: none;
   }
 }
-
+@media only screen and (max-height: 520px) {
+ .menu__social {
+   display: none;
+ }
+}
 
 @media (max-width: 1200px) {
   .container {

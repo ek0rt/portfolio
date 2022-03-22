@@ -21,9 +21,13 @@
       margin-bottom: 0;
     }
     p {
+      max-width: 280px;
+      max-height: 90px;
       margin-top: 15px;
       font-size: 12px;
       line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   &__ratings {

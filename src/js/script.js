@@ -1,3 +1,4 @@
+//menu
 const hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.menu'),
         closeElem = document.querySelector('.menu__close');
@@ -10,6 +11,7 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+// Counter 
 const counters = document.querySelectorAll('.skills__ratings-counter'),
   lines = document.querySelectorAll('.skills__ratings-line span');
 
@@ -17,6 +19,7 @@ counters.forEach((item, i) => {
   lines[i].style.width = item.innerHTML;
 });
 
+// scroll
 
 $(window).scroll(function() {
   if($(this).scrollTop() > 1100) {
@@ -26,11 +29,22 @@ $(window).scroll(function() {
   }
 });
 
-$("a[href^='#up'], a[href^='#about'], a[href^='#portfolio']").click(function(){
+$("a[href^='#up'], a[href^='#about'], a[href^='#portfolio'], a[href^='#skills'], a[href^='#contacts'], a[href^='#price'], a[href^='#resume']").click(function(){
   const _href = $(this).attr("href");
   $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
   return false;
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 

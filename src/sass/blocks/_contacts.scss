@@ -38,9 +38,6 @@
     }
 
   }
-  // &__link {
-  //   margin-right: 20px;
-  // }
     &__form {
       margin-top: 30px;
       display: grid;
@@ -65,18 +62,21 @@
         height: 100%;
         padding: 0 20px;
         font-size: 12px;
+        border-radius: 5px;
       }
   
     }
     &__textarea {
       position: relative;
       grid-column: 1/3;
+     
       textarea {
         width: 100%;
         height: 100%;
         padding: 20px;
         font-size: 12px;
         resize: none;
+        border-radius: 5px;
       }
     }
     &__btn {
@@ -100,6 +100,7 @@
       font-size: 12px;
       line-height: 18px;
       align-self: center;
+      align-items: center;
       span {
         margin-left: 10px;
       }
