@@ -44,6 +44,7 @@
     <div class="sidepanel__text"><span>Социальные сети</span></div>
   </aside>
 
+
   <div class="menu">
     <div class="menu__block">
       <div class="menu__close">
@@ -68,7 +69,7 @@
     <div class="menu__overlay"></div>
   </div>
 
-  <section class="promo">
+  <section id="up" class="promo">
 
     <div class="hamburger">
       <span></span>
@@ -80,8 +81,8 @@
       <div class="title title_fs16 promo__subtitle">Меня зовут Александра Смит</div>
       <h1 class="title title_fs48 promo__title">Я web-разработчик из Москвы</h1>
       <div class="promo__btns">
-        <a href="#" class="promo__link btn">Портфолио</a>
-        <a href="#" class="promo__link btn_about">Обо мне</a>
+        <a href="#portfolio" class="promo__link btn">Портфолио</a>
+        <a href="#about" class="promo__link btn_about">Обо мне</a>
       </div>
     </div>
   </section>
@@ -102,7 +103,7 @@
       </div>
 
         <div class="about__descr">
-          <h2 class="title title_fs16 about__title">Про меня</h2>
+          <h2 id="about" class="title title_fs16 about__title">Про меня</h2>
           <div class="title about__subtitle title_fs36">Меня зовут Александра</div>
           <div class="divider"></div>
           <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -322,7 +323,7 @@
 </div>
 </section>
 
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
 <div class="container">
   <h2 class="title title_fs16 title__section-title">Портфолио</h2>
   <div class="title title_fs36 title__section-subtitle">Мои работы</div>
@@ -432,7 +433,14 @@
   </div>
 </section>
 
-  <script src="js/script.js"></script>
+<a href="#up" class="pageup">
+  <img src="./icons/up.svg" alt="up">
+</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/jquery.mask.min.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

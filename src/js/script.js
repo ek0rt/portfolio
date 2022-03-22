@@ -15,6 +15,22 @@ const counters = document.querySelectorAll('.skills__ratings-counter'),
 
 counters.forEach((item, i) => {
   lines[i].style.width = item.innerHTML;
-})
+});
 
-console.log(lines)
+
+$(window).scroll(function() {
+  if($(this).scrollTop() > 1100) {
+    $('.pageup').fadeIn();
+  } else {
+    $('.pageup').fadeOut();
+  }
+});
+
+$("a[href^='#up'], a[href^='#about'], a[href^='#portfolio']").click(function(){
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+});
+
+
+
